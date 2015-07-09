@@ -1,0 +1,30 @@
+<mvc:View busyIndicatorDelay="0" controllerName="sap.training.fullscreen.view.Supplier" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<Page class="sapUiResponsiveContentPadding" navButtonPress="onNavBack" showNavButton="true" title="{product>Name}">
+		<content>
+			<IconTabBar binding="{product>Supplier}" class="sapUiResponsiveContentPadding" id="idIconTabBar" select="onTabSelect">
+				<items>
+					<IconTabFilter id="infoTab" key="Info" text="{i18n>infoTabFilterText}">
+						<Text text="{product>Name}"/>
+					</IconTabFilter>
+					<IconTabFilter id="addressTab" key="Address" text="{i18n>addressTabFilterText}">
+						<f:SimpleForm>
+							<f:content>
+								<Label text="{i18n>streetLabel}"/>
+								<Text text="{product>Address/Street}"/>
+								<Label text="{i18n>cityLabel}"/>
+								<Text text="{product>Address/City}"/>
+								<Label text="{i18n>zipCodeLabel}"/>
+								<Text text="{product>Address/Zip Code}"/>
+								<Label text="{i18n>stateLabel}"/>
+								<Text text="{product>Address/State}"/>
+								<Label text="{i18n>countryLabel}"/>
+								<Text text="{product>Address/Country}"/>
+							</f:content>
+						</f:SimpleForm>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</content>
+	</Page>
+</mvc:View>

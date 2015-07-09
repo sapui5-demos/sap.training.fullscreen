@@ -1,0 +1,25 @@
+<mvc:View controllerName="sap.training.fullscreen.view.Overview" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<Page title="{i18n>overviewPageTitle}">
+		<content>
+			<Table class="sapUiResponsiveMargin" items="{ path : 'product>/Products', sorter : { path : 'product>Name' } }" width="auto">
+				<columns>
+					<Column>
+						<Text text="{i18n>columnName}"/>
+					</Column>
+					<Column>
+						<Text text="{i18n>columnDescription}"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem press="onPress" type="Navigation">
+						<cells>
+							<ObjectIdentifier title="{product>Name}"/>
+							<Text text="{product>Description}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+	</Page>
+</mvc:View>

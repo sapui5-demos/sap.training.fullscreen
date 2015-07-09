@@ -1,0 +1,1 @@
+sap.ui.controller("sap.training.fullscreen.view.App", {});

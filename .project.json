@@ -1,0 +1,43 @@
+{
+  "mockpreview": {
+    "mockUri": "/destinations/ODATA_ORG/V2/OData/OData.svc",
+    "metadataFilePath": "",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  },
+  "generation": [
+    {
+      "templateId": "ui5template.basicSAPUI5ApplicationComponent",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Mon, 15 Jun 2015 09:20:13 GMT"
+    },
+    {
+      "templateId": "ui5template.basicSAPUI5ApplicationComponent",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Mon, 15 Jun 2015 09:30:26 GMT"
+    },
+    {
+      "templateId": "ui5template.basicSAPUI5ApplicationComponent",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Mon, 15 Jun 2015 09:30:56 GMT"
+    },
+    {
+      "templateId": "ui5template.basicSAPUI5ApplicationComponent",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Fri, 19 Jun 2015 09:33:06 GMT"
+    }
+  ],
+  "hcpdeploy": {
+    "account": "p1764877988trial",
+    "name": "saptrainingfullscreen",
+    "lastVersionWeTriedToDeploy": "1.0.1"
+  }
+}

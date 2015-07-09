@@ -1,0 +1,29 @@
+<mvc:View controllerName="sap.training.fullscreen.view.Product" xmlns:f="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page navButtonPress="onNavBack" showNavButton="true"
+		title="{product>Name}">
+		<content>
+			<Panel class="sapUiResponsiveMargin" width="auto">
+				<headerToolbar>
+					<Toolbar>
+						<Title level="H2" text="{i18n>productToolbarTitle}"/>
+						<ToolbarSpacer/>
+						<Link text="{i18n>supplierLinkText}" press="onShowSupplier" />
+					</Toolbar>
+				</headerToolbar>
+				<content>
+					<f:SimpleForm >
+						<f:content>
+							<Label text="{i18n>descriptionLabelText}"/>
+							<Text text="{product>Description}"/>
+							<Label text="{i18n>priceLabelText}"/>
+							<Text text="{product>Price}"/>
+							<Label text="{i18n>ratingLabelText}"/>
+							<RatingIndicator enabled="false" value="{product>Rating}"/>
+						</f:content>
+					</f:SimpleForm>
+				</content>
+			</Panel>
+		</content>
+	</Page>
+</mvc:View>
