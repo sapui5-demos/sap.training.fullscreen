@@ -2,16 +2,38 @@
   "run": [
     {
       "filePath": "/sap.training.fullscreen/index.html",
-      "previewMode": 0,
+      "previewMode": 1,
       "dataMode": 1,
       "workspace": "withoutWorkspace",
       "ui5ActiveVersion": null,
+      "ui5VerSource": null,
       "isDefaultVersion": 0,
-      "urlParameters": [],
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "hashParameter": "",
+      "backendSystem": [
+        {
+          "source": "ODATA_ORG",
+          "destinations": "ODATA_ORG"
+        }
+      ],
+      "destBackendSystem": [
+        "DCC_100"
+      ],
       "_metadata": {
+        "id": 1967259,
         "runnerId": "webapprunner",
-        "id": 3319761,
-        "displayName": "New Web Application 6"
+        "displayName": "New Web Application"
       }
     }
   ]
